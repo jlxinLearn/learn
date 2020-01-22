@@ -405,3 +405,66 @@ git push -u orgin master
 ```bash
 git checkout -b about-page
 ```
+
+合并分支
+
+```bash
+git checkout master
+git merge about-page
+```
+
+回复以前的版本
+
+```bash
+git log
+git reset --hard 5098bbd7191809c8b798f03b506df0156f5512bd
+git push -f
+```
+
+回退至以前的版本
+
+```bash
+git revert -n 5098bbd7191809c8b798f03b506df0156f5512bd
+git add .
+git commit -m "revert add text.txt"
+git push
+```
+
+合作
+
+```bash
+cd 
+mkdir tmp/
+git clone address name
+cd name
+code .
+git commit -am "strings"
+git push
+```
+
+本人
+
+```bash
+git pull 
+```
+
+解决冲突
+
+```bash
+git pull
+git push
+```
+
+发布新的分支
+
+```bash
+git checkout -b about
+git push -u origin fix-trademark
+```
+
+```bash
+git pull
+git branch -a
+git checkout about
+git push
+```
