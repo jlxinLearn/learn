@@ -385,6 +385,7 @@ git commit -am "Add some HTML structrue"
 如何进行远程的push
 
 ```bash
+git pull origin master --allow-unrelated-history
 git remote add origin https://github.com/jlxinLearn/notes
 git push -u orgin master
 ```
