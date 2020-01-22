@@ -382,3 +382,11 @@ git commit -am "commit a tag"
 git commit -am "Add some HTML structrue"
 ```
 
+如何进行远程的push
+
+```bash
+git remote add origin https://github.com/jlxinLearn/notes
+git push -u orgin master
+```
+
+`-u`表示我们表示使用**GitHub**作为上游的仓库，当我们使用`git pull`的时候我们会我们会自动的下载所有的改变
